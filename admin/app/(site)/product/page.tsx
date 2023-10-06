@@ -38,14 +38,14 @@ function Page() {
 				}));
 			}
 		}
-
-		if(products.length === 0) getData();
+		
+		getData();
 		setLoading(false);
-	}, []);
+	}, [dispatch]);
 
 	const pages = useMemo(() => {
 		return Math.ceil(total / 10);
-	}, [products]);
+	}, [total]);
 
 	if(loading){
 		return(

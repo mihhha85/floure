@@ -1,6 +1,7 @@
 "use client"
 import {useState, useEffect} from "react";
 import Link from 'next/link';
+import Image from 'next/image';
 import { useRouter, useParams } from "next/navigation";
 import {Box, Card, Grid, Button, TextField} from '@mui/material';
 import Typography from '@mui/material/Typography';
@@ -184,7 +185,7 @@ function Page() {
 								}}>
 									<HighlightOffIcon color="warning"/>
 								</Box>
-								<img src={process.env.serverUrl + '/' + photo} alt={title} width="200" />
+								<Image src={process.env.serverUrl + '/' + photo} alt={title} width="200" />
 							</Box>
 							:	
 							<Input type="file" onChange={handleFileInputChange}/>
