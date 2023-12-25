@@ -6,9 +6,11 @@
 /client/.cache
 /client/.next
 /client/.npm
+/client/.env
 /admin/node_modules
 /admin/.cache
 /admin/.next
 /admin/.npm
+/admin/.env
 _client
 

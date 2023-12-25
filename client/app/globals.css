@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    @apply min-h-screen;
+}
+
+.section {
+    @apply block w-full h-full bg-cyan-200 py-10;
+}
+
+.container {
+    @apply mx-auto overflow-hidden xl:px-40;
+}
+
+.image-box{
+    @apply w-full h-80 flex items-center justify-center hover:bg-gradient-radial hover:from-sky-300 ;
+}
+
+.image-box > img{
+  transition:  all 0.2s ease-in-out;
+}
+
+.image-box:hover > img{
+    transform: scale(1.1);
+}
+
+.btn{
+  @apply w-32 font-bold  mt-auto rounded-md py-2 transition-all duration-200 ease-in-out
+  bg-gradient-to-r from-cyan-200 to-sky-500 hover:from-pink-500 hover:to-yellow-500
+text-slate-800 hover:text-cyan-200;
+}
+
+
+
