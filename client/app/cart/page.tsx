@@ -5,7 +5,6 @@ import CartItems from '@/component/CartItems';
 import {useAppSelector, useAppDispatch} from '@/store/hooks';
 import { clearOrder } from '@/store/features/orderSlice';
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
-import { motion, AnimatePresence } from "framer-motion";
 
 const variantsBox = {
 	open: { opacity: 1, height: "auto" },
